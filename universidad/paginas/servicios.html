@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="icon" href="/imagenes/iconouniversidad.png" type="image/x-icon">
+    <link rel="icon" href="/universidad-main/universidad/imagenes/iconouniversidad.png" type="image/x-icon">
 </head>
 <body>
     <h1 align="center">SERVICIOS</h1>
@@ -19,11 +19,19 @@
             <input type="radio" name="servicio" value="Doctorado"> Doctorado <br><br>
      </div>
      <div align="center">
-        <a href="/inicio.html">Volver a inicio</a><br>
+        <a href="/universidad-main/universidad/inicio.html">Volver a inicio</a><br>
         <a href="/paginas/contacto.html">Contactanos</a><br>
         <a href="/paginas/nosotros.html">Nosotros</a><br>
-        <a href="/paginas/detallesServicio.html">Tarifas servicios</a>
+        <a href="/paginas/detallesServicio.html">Tarifas servicios</a><br>
      </div>
+
+     <!-- Z-index -->
+     <div style="position: absolute; z-index: 1; width: 100px; height: 100px; background-color: red;">
+        Este div está en la parte superior debido a su z-index más alto.
+    </div>
+    <div style="position: absolute; z-index: 0; width: 100px; height: 100px; background-color: blue;">
+        Este div está debajo del div rojo.
+    </div>
 
     
 

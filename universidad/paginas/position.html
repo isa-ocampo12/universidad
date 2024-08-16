@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Position en CSS</title>
+    <style>
+        .static {
+            position: static;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .absolute-container {
+            position: relative;
+            height: 200px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+        .absolute {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: yellow;
+            padding: 10px;
+        }
+        .sticky-container {
+            height: 1500px;
+        }
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="static">
+        Este es un elemento con `position: static`.
+    </div>
+
+    <div class="relative">
+        Este es un elemento con `position: relative`.
+    </div>
+
+    <div class="absolute-container">
+        Contenedor relativo
+        <div class="absolute">
+            Este es un elemento con `position: absolute`.
+        </div>
+    </div>
+
+    <div class="fixed">
+        Este es un elemento con `position: fixed`.
+    </div>
+
+    <div class="sticky-container">
+        <div class="sticky">
+            Este es un elemento con `position: sticky`.
+        </div>
+        <p>Contenido largo aquí para demostrar el comportamiento de scroll...</p>
+    </div>
+ 
+
+ 
+
+</body>
+</html>

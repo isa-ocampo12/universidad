@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Display en CSS</title>
+    <style>
+        .block {
+            display: block;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+            margin-right: 10px;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="block">
+        Este es un elemento de bloque.
+    </div>
+
+    <span class="inline">Elemento en línea 1.</span>
+    <span class="inline">Elemento en línea 2.</span>
+
+    <div class="inline-block">Elemento en línea bloque 1.</div>
+    <div class="inline-block">Elemento en línea bloque 2.</div>
+
+    <div class="flex">
+        <div style="background-color: lightblue;">Item Flex 1</div>
+        <div style="background-color: lightgreen;">Item Flex 2</div>
+        <div style="background-color: lightcoral;">Item Flex 3</div>
+    </div>
+
+    <div class="grid">
+        <div style="background-color: lightyellow;">Celda 1</div>
+        <div style="background-color: lightpink;">Celda 2</div>
+        <div style="background-color: lightgray;">Celda 3</div>
+    </div>
+
+    <p class="none">Este texto no será visible.</p>
+
+</body>
+</html>
